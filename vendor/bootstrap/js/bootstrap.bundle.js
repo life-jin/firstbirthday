@@ -5850,7 +5850,7 @@ var ScrollSpy = function () {
     };
 
     _proto._process = function _process() {
-      var scrollTop = this._getScrollTop() + this._config.offset;
+      var scrollTop = this._getScrollTop() + this._config.offset + 1;
 
       var scrollHeight = this._getScrollHeight();
 
@@ -5861,7 +5861,7 @@ var ScrollSpy = function () {
       }
 
       if (scrollTop >= maxScroll) {
-        var target = this._targets[this._targets.length - 1];
+		  var target = this._targets[this._targets.length - 1];
 
         if (this._activeTarget !== target) {
           this._activate(target);
@@ -5881,7 +5881,8 @@ var ScrollSpy = function () {
       for (var i = this._offsets.length; i--;) {
         var isActiveTarget = this._activeTarget !== this._targets[i] && scrollTop >= this._offsets[i] && (typeof this._offsets[i + 1] === 'undefined' || scrollTop < this._offsets[i + 1]);
 
-        if (isActiveTarget) {
+		if (isActiveTarget) {
+			console.log('isActiveTarget');
           this._activate(this._targets[i]);
         }
       }
@@ -5898,11 +5899,13 @@ var ScrollSpy = function () {
       queries = queries.map(function (selector) {
         return selector + "[data-target=\"" + target + "\"]," + (selector + "[href=\"" + target + "\"]");
       });
-      var $link = $(queries.join(','));
+	  var $link = $(queries.join(','));
+	  console.log(target);
+	  console.log($link);
 
       if ($link.hasClass(ClassName.DROPDOWN_ITEM)) {
         $link.closest(Selector.DROPDOWN).find(Selector.DROPDOWN_TOGGLE).addClass(ClassName.ACTIVE);
-        $link.addClass(ClassName.ACTIVE);
+		$link.addClass(ClassName.ACTIVE);
       } else {
         // Set triggered link as active
         $link.addClass(ClassName.ACTIVE); // Set triggered links parents as active
@@ -5910,7 +5913,7 @@ var ScrollSpy = function () {
 
         $link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_LINKS + ", " + Selector.LIST_ITEMS).addClass(ClassName.ACTIVE); // Handle special case when .nav-link is inside .nav-item
 
-        $link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_ITEMS).children(Selector.NAV_LINKS).addClass(ClassName.ACTIVE);
+		$link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_ITEMS).children(Selector.NAV_LINKS).addClass(ClassName.ACTIVE);
       }
 
       $(this._scrollElement).trigger(Event.ACTIVATE, {
