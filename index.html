@@ -1,222 +1,243 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-  	<meta property="og:image" content="img/header.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:image" content="img/header.jpg">
 
-    <title>진율 - 돌잔치</title>
+	<title>진율 - 돌잔치</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<!-- Custom fonts for this template -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Plugin CSS -->
+	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/creative.min.css" rel="stylesheet">
 
-  </head>
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-  	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  		<div class="container">
-  			<a class="navbar-brand js-scroll-trigger" href="#page-top">Happy Birthday</a>
-  			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-  				<span class="navbar-toggler-icon"></span>
-  			</button>
-  			<div class="collapse navbar-collapse" id="navbarResponsive">
-  				<ul class="navbar-nav ml-auto">
-  					<li class="nav-item">
-  						<a class="nav-link js-scroll-trigger" href="#about">언제? 어디서?</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link js-scroll-trigger" href="#location">위치보기</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link js-scroll-trigger" href="#picture">사진보기</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link js-scroll-trigger" href="#contact">연락하기</a>
-  					</li>
-  				</ul>
-  			</div>
-  		</div>
-  	</nav>
-
-  	<header class="masthead text-center text-white d-flex">
-  		<div class="container my-auto">
-  			<div class="row">
-  				<div class="col-lg-10 mx-auto">
-  					<h1 class="text-uppercase">
-  						<strong>진율이의<br />첫 번째 생일에<br />초대합니다.</strong>
-  					</h1>
-  					<hr>
-  				</div>
-  				<div class="col-lg-8 mx-auto">
-  					<p class="text-faded mb-5">안녕하세요.<br />진율이가 드디어 한살이 되었습니다.<br />많은 분들의 관심과 사랑 덕분입니다.<br />고맙습니다.</p>
-  					<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">
-  						<i class="fa fa-heart" aria-hidden="true"></i> 초대합니다.
-  					</a>
-  				</div>
-  			</div>
-  		</div>
-  	</header>
-
-  	<section class="bg-primary" id="about">
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-lg-8 mx-auto text-center">
-  					<h2 class="section-heading text-white"><i class="fa fa-clock-o" aria-hidden="true"></i> 언제?</h2>
-  					<hr class="light my-4">
-  					<p class="text-faded mb-4">2018년 2월 3일 토요일 오전 11시</p>
-
-  					<h2 class="section-heading text-white"><i class="fa fa-map-marker" aria-hidden="true"></i> 어디서?</h2>
-  					<hr class="light my-4">
-  					<p class="text-faded mb-4">서울 노원구 노해로 502 4층 커넬어반</p>
-  					<a class="btn btn-light btn-xl js-scroll-trigger" href="#location">
-  						<i class="fa fa-map-marker" aria-hidden="true"></i> 위치보기
-  					</a>
-  				</div>
-  			</div>
-  		</div>
-  	</section>
-
-  	<section id="location">
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-lg-12 text-center">
-  					<div class="col-lg-12 text-center">
-  						<i class="fa fa-4x fa-street-view text-primary mb-3 sr-icons"></i>
-  						<h2 class="section-heading">위치보기</h2>
-					  	<p class="text-muted mb-0">KT노원사옥 4층</p>
-  						<hr class="my-4">
-  						<img class="img-fluid" src="img/location.PNG" alt="">
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-lg-3 col-md-6 text-center">
-  					<div class="service-box mt-5 mx-auto">
-  						<i class="fa fa-4x fa-map-marker text-primary mb-3 sr-icons"></i>
-  						<div id="map" style="height:400px;"></div>
-  					</div>
-  				</div>
-  				<div class="col-lg-3 col-md-6 text-center">
-  					<div class="service-box mt-5 mx-auto">
-  						<i class="fa fa-4x fa-car text-primary mb-3 sr-icons"></i>
-  						<p class="text-muted mb-0">던킨 도너츠 오른쪽 지하주차장</p>
-  						<img class="img-fluid" src="img/parking.PNG" alt="">
-  					</div>
-				  	<div class="service-box mt-2 mx-auto">
-				  		<a class="btn btn-primary btn-xl js-scroll-trigger" href="http://rvdrive.map.daum.net/view/4285706" target="_blank">
-				  			<i class="fa fa-car" aria-hidden="true"></i> 동영상보기
-				  		</a>
-				  	</div>
-  				</div>
-  			</div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Happy Birthday</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">언제? 어디서?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#location">위치보기</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#picture">사진보기</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#contact">연락하기</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-  	</section>
+	</nav>
 
-  	<section class="p-0" id="picture">
-  		<div class="container-fluid p-0">
-  			<div class="row no-gutters popup-gallery">
-			  	<div class="col-lg-3 col-md-6 text-center">
-			  		<div class="service-box mt-5 mx-auto">
-			  			<i class="fa fa-4x fa-camera text-primary mb-3 sr-icons"></i>
-			  		</div>
-			  	</div>
-  				<div class="col-lg-4 col-sm-6">
-  					<a class="portfolio-box" href="img/portfolio/1.jpg">
-  						<img class="img-fluid" src="img/portfolio/1.jpg" alt="">
-  					</a>
-  				</div>
-  				<div class="col-lg-4 col-sm-6">
-  					<a class="portfolio-box" href="img/portfolio/2.jpg">
-  						<img class="img-fluid" src="img/portfolio/2.jpg" alt="">
-  					</a>
-  				</div>
-  				<div class="col-lg-4 col-sm-6">
-  					<a class="portfolio-box" href="img/portfolio/3.jpg">
-  						<img class="img-fluid" src="img/portfolio/3.jpg" alt="">
-  					</a>
-  				</div>
-  				<div class="col-lg-4 col-sm-6">
-  					<a class="portfolio-box" href="img/portfolio/4.jpg">
-  						<img class="img-fluid" src="img/portfolio/4.jpg" alt="">
-  					</a>
-  				</div>
-  				<div class="col-lg-4 col-sm-6">
-  					<a class="portfolio-box" href="img/portfolio/5.jpg">
-  						<img class="img-fluid" src="img/portfolio/5.jpg" alt="">
-  					</a>
-  				</div>
-  				<div class="col-lg-4 col-sm-6">
-  					<a class="portfolio-box" href="img/portfolio/6.jpg">
-  						<img class="img-fluid" src="img/portfolio/6.jpg" alt="">
-  					</a>
-  				</div>
-			  	<div class="col-lg-4 col-sm-6">
-			  		<a class="portfolio-box" href="img/portfolio/7.jpg">
-			  			<img class="img-fluid" src="img/portfolio/7.jpg" alt="">
-			  		</a>
-			  	</div>
-			  	<div class="col-lg-4 col-sm-6">
-			  		<a class="portfolio-box" href="img/portfolio/8.jpg">
-			  			<img class="img-fluid" src="img/portfolio/8.jpg" alt="">
-			  		</a>
-			  	</div>
-  			</div>
-  		</div>
-  	</section>
+	<header class="masthead text-center text-white d-flex">
+		<div class="container my-auto">
+			<div class="row">
+				<div class="col-lg-10 mx-auto">
+					<h1 class="text-uppercase">
+						<strong>진율이의<br />첫 번째 생일에<br />초대합니다.</strong>
+					</h1>
+					<hr>
+				</div>
+				<div class="col-lg-8 mx-auto">
+					<p class="text-faded mb-5">안녕하세요.<br />진율이가 드디어 한살이 되었습니다.<br />많은 분들의 관심과 사랑 덕분입니다.<br />고맙습니다.</p>
+					<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">
+						<i class="fa fa-heart" aria-hidden="true"></i> 초대합니다.
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
 
-  	<section id="contact">
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-lg-8 mx-auto text-center">
-				  	<i class="fa fa-phone fa-3x mb-3 sr-contact"></i><h2 class="section-heading">연락하기</h2>
-  					<hr class="my-4">
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="col-lg-4 ml-auto text-center">
-  					<p>엄마번호</p><p><a href="tel:01090650021">010-9065-0021</a></p>
-					  <br/>
-				  	<p>아빠번호</p><p><a href="tel:01086969123">010-8696-9123</a></p>
-  				</div>
-  			</div>
-  		</div>
-  	</section>
+	<section class="bg-primary" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto text-center">
+					<h2 class="section-heading text-white"><i class="fa fa-clock-o" aria-hidden="true"></i> 언제?</h2>
+					<hr class="light my-4">
+					<p class="text-faded mb-4">2018년 2월 3일 토요일 오전 11시</p>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+					<h2 class="section-heading text-white"><i class="fa fa-map-marker" aria-hidden="true"></i> 어디서?</h2>
+					<hr class="light my-4">
+					<p class="text-faded mb-4">서울 노원구 노해로 502 4층 커넬어반</p>
+					<a class="btn btn-light btn-xl js-scroll-trigger" href="#location">
+						<i class="fa fa-map-marker" aria-hidden="true"></i> 위치보기
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<section id="location">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="col-lg-12 text-center">
+						<i class="fa fa-4x fa-street-view text-primary mb-3 sr-icons"></i>
+						<h2 class="section-heading">위치보기</h2>
+						<p class="text-muted mb-0">KT노원사옥 4층</p>
+						<hr class="my-4">
+						<img class="img-fluid" src="img/location.PNG" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<i class="fa fa-4x fa-map-marker text-primary mb-3 sr-icons"></i>
+						<div id="map" style="height:400px;"></div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<i class="fa fa-4x fa-car text-primary mb-3 sr-icons"></i>
+						<p class="text-muted mb-0">던킨 도너츠 오른쪽 지하주차장</p>
+						<img class="img-fluid" src="img/parking.PNG" alt="">
+					</div>
+					<div class="service-box mt-2 mx-auto">
+						<a class="btn btn-primary btn-xl js-scroll-trigger" href="http://rvdrive.map.daum.net/view/4285706" target="_blank">
+							<i class="fa fa-car" aria-hidden="true"></i> 동영상보기
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+	<section class="p-0" id="picture">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters popup-gallery">
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box mt-5 mx-auto">
+						<i class="fa fa-4x fa-camera text-primary mb-3 sr-icons"></i>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/1.jpg">
+						<img class="img-fluid" src="img/portfolio/1.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/2.jpg">
+						<img class="img-fluid" src="img/portfolio/2.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/3.jpg">
+						<img class="img-fluid" src="img/portfolio/3.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/4.jpg">
+						<img class="img-fluid" src="img/portfolio/4.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/5.jpg">
+						<img class="img-fluid" src="img/portfolio/5.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/6.jpg">
+						<img class="img-fluid" src="img/portfolio/6.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/7.jpg">
+						<img class="img-fluid" src="img/portfolio/7.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<a class="portfolio-box" href="img/portfolio/8.jpg">
+						<img class="img-fluid" src="img/portfolio/8.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mx-auto text-center">
+					<h2 class="section-heading">연락하기</h2>
+					<hr class="my-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 ml-auto text-center">
+					<p>엄마</p>
+					<p>
+						<a href="tel:01090650021"><i class="fa fa-phone fa-3x mb-3 sr-contact"></i></a>
+						<a href="sms:+01090650021">
+							<i class="fa fa-comment fa-3x mb-3 sr-contact"></i>
+							<i class="fa fa-stack-1x fa-stack-text fa-inverse" style="margin-left:20px;margin-top:10px;">SMS</i>
+						</a>
+					</p>
+
+					<br />
+					<p>아빠</p>
+					<p>
+						<a href="tel:01090650021"><i class="fa fa-phone fa-3x mb-3 sr-contact"></i></a>
+						<a href="sms:+01090650021">
+							<i class="fa fa-comment fa-3x mb-3 sr-contact"></i>
+							<i class="fa fa-stack-1x fa-stack-text fa-inverse" style="margin-left:20px;margin-top:10px;">SMS</i>
+						</a>
+
+					</p>
+
+					<a id="kakao-link-btn" class="btn btn-info btn-xl js-scroll-trigger">
+						<i class="fa fa-car" aria-hidden="true"></i> 카카오톡 공유하기
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="js/creative.min.js"></script>
 
 	<!-- google map-->
-  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZnnM0MX3v-YTRHYK_WXOzAZQTmKPEiOI"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZnnM0MX3v-YTRHYK_WXOzAZQTmKPEiOI"></script>
 
-  	<script>
+	<script>
 		$(function () {
 
 			function initMap() {
@@ -256,7 +277,48 @@
 
 			google.maps.event.addDomListener(window, 'load', initMap);
 		});
-  	</script>
-  </body>
+	</script>
+	<script type='text/javascript'>
+		//<![CDATA[
+		// // 사용할 앱의 JavaScript 키를 설정해 주세요.
+		Kakao.init('d6d3fe1d07be28f99bada41c864ddd91');
+		// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+		Kakao.Link.createDefaultButton({
+			container: '#kakao-link-btn',
+			objectType: 'feed',
+			content: {
+				title: '딸기 치즈 케익',
+				description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+				imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+				link: {
+					mobileWebUrl: 'https://developers.kakao.com',
+					webUrl: 'https://developers.kakao.com'
+				}
+			},
+			social: {
+				likeCount: 286,
+				commentCount: 45,
+				sharedCount: 845
+			},
+			buttons: [
+				{
+					title: '웹으로 보기',
+					link: {
+						mobileWebUrl: 'https://developers.kakao.com',
+						webUrl: 'https://developers.kakao.com'
+					}
+				},
+				{
+					title: '앱으로 보기',
+					link: {
+						mobileWebUrl: 'https://developers.kakao.com',
+						webUrl: 'https://developers.kakao.com'
+					}
+				}
+			]
+		});
+	  //]]>
+	</script>
+</body>
 
 </html>
